@@ -6,7 +6,7 @@ class Config():
     For passing these parameters
     '''
     def __init__(self):
-        # datadatapath
+        # datapath
         self.network = 'Models/Binary_Binary_GO_NN.py' #Model file - must return valid network
         self.save = 'model/' # save directory
         self.load = ''  #load existing net weights
@@ -15,7 +15,7 @@ class Config():
         self.test = '../TrainData/GO_0006281_testing_data_2016_0' # Testing dataset
         self.topo = '../Topology/GO_0006281_topology' # Ontology graph topology file
         self.model = 'model/DCell_GO:0006281_model.pth'
-
+	# configuration
         self.gindex = '' # Gene index mapping file
         self.devid = 0 # device ID (if using CUDA)
         self.nGPU= 1  # num of gpu devices used
